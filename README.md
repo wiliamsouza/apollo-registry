@@ -33,5 +33,5 @@ Pushing images
 --------------
 
 Before push an image you need to build one, see `apollo/README.md`
-or `coreos-nginx/README.md` for instruction how to build a `development`
+or `apollo-nginx/README.md` for instruction how to build a `development`
 image and push an image to a registry.
