@@ -1,5 +1,5 @@
-Registry
-========
+Apollo registry
+===============
 
 It is [docker-registry](https://github.com/dotcloud/docker-registry)
 used for hosting/delivering repositories and images for containers.
@@ -11,18 +11,18 @@ Getting code
 ------------
 
 ```
-git clone https://github.com/wiliamsouza/marlito.git
+git clone https://github.com/wiliamsouza/apollo-registry.git
 ```
 
 Running locally
 ---------------
 
 ```
-mkdir -p ~/.containers/marlito/registry/volumes/data
+mkdir -p ~/.containers/apollo/registry/volumes/data
 ```
 
 ```
-cd marlito/registry
+cd apollo-registry
 fig up -d
 ```
 
@@ -32,6 +32,6 @@ of the docker containers.
 Pushing images
 --------------
 
-Before push an image you need to build one, see `api/README.md`
-or `nginx/README.md` for instruction how to build a `development`
+Before push an image you need to build one, see `apollo/README.md`
+or `coreos-nginx/README.md` for instruction how to build a `development`
 image and push an image to a registry.
