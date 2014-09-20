@@ -21,17 +21,26 @@ Running locally
 mkdir -p ~/.containers/apollo/registry/volumes/data
 ```
 
+[fig](http://orchardup.github.io/fig/) is used to facilitate start and stop
+of the docker containers.
+
 ```
 cd apollo-registry
 fig up -d
 ```
 
-[fig](http://orchardup.github.io/fig/) is used to facilitate start and stop
-of the docker containers.
+Common address
+--------------
+
+As root set more one ip address to `eth0`.
+
+```
+ifconfig eth0:0 172.16.16.16
+```
 
 Pushing images
 --------------
 
 Before push an image you need to build one, see `apollo/README.md`
-or `apollo-nginx/README.md` for instruction how to build a `development`
+or `apollo-nginx/README.md` for instruction how to build a `local`
 image and push an image to a registry.
