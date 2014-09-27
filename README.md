@@ -17,8 +17,12 @@ git clone https://github.com/wiliamsouza/apollo-registry.git
 Running locally
 ---------------
 
+Create to volumes folder one to be used locally and one to be syncronized with
+the cluster for future use.
+
 ```
 mkdir -p ~/.containers/apollo/registry/volumes/data
+mkdir -p ~/.containers/local/registry/volumes/data
 ```
 
 [fig](http://orchardup.github.io/fig/) is used to facilitate start and stop
