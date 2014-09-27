@@ -14,8 +14,10 @@ Getting code
 git clone https://github.com/wiliamsouza/apollo-registry.git
 ```
 
-Running locally
----------------
+Running
+-------
+
+Before run see [apollo-coreos](https://github.com/wiliamsouza/apollo-coreos#common-address) for instructions.
 
 Create to volumes folder one to be used locally and one to be syncronized with
 the cluster for future use.
@@ -33,18 +35,8 @@ cd apollo-registry
 fig up -d
 ```
 
-Common address
---------------
-
-As root set more one ip address to `eth0`.
-
-```
-ifconfig eth0:0 172.16.16.16
-```
-
 Pushing images
 --------------
 
-Before push an image you need to build one, see `apollo/README.md`
-or `apollo-nginx/README.md` for instruction how to build a `local`
+Before push an image you need to build one, see [apollo-coreos](https://github.com/wiliamsouza/apollo-coreos) for instruction how to build a `local`
 image and push an image to a registry.
